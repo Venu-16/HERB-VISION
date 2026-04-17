@@ -178,8 +178,8 @@ function Metrics({ user }) {
             <h2 className="text-2xl font-bold text-slate-900">Add New Metric</h2>
             <p className="text-sm text-slate-600 mt-2">Submit your latest model performance metrics for trend comparison.</p>
           </div>
-          <Button type="submit" form="metric-form" className="w-full lg:w-auto justify-center">
-            Add Metric
+          <Button type="submit" form="metric-form" variant="primary" className="w-full lg:w-auto justify-center bg-primary text-black shadow-lg hover:bg-primary/90">
+            <span className='text-black font-semibold'>Add Metric</span>
           </Button>
         </div>
 

@@ -56,7 +56,7 @@ function Home({ user }) {
           title="Model Metrics"
           description="Compare performance metrics between previous and latest model versions."
           link="/metrics"
-          color="from-secondary to-primary"
+          color="white to-gray-100"
         />
       </div>
     </div>
@@ -67,16 +67,16 @@ function FeatureCard({ icon, title, description, link, color }) {
   return (
     <Link
       to={link}
-      className={`group rounded-[32px] bg-gradient-to-br ${color} p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl`}
+      className="group rounded-[32px] bg-gradient-to-br from-primary/10 to-white border border-slate-200 p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
     >
       <div className="flex items-center gap-4 mb-4">
-        <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-white/20 text-white transition-colors duration-300 group-hover:bg-white/30">
+        <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary/20">
           {icon}
         </div>
-        <h3 className="text-2xl font-bold text-white">{title}</h3>
+        <h3 className="text-2xl font-bold text-slate-900">{title}</h3>
       </div>
-      <p className="text-white/90 leading-relaxed">{description}</p>
-      <div className="mt-6 flex items-center gap-2 text-white font-semibold">
+      <p className="text-slate-600 leading-relaxed">{description}</p>
+      <div className="mt-6 flex items-center gap-2 text-primary font-semibold">
         <span>Learn more</span>
         <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
       </div>

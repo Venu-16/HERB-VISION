@@ -116,12 +116,12 @@ function Upload({ user }) {
                 {loading ? (
                   <>
                     <Loader2 className="h-5 w-5 animate-spin text-black" />
-                    <span className="text-black">Analyzing...</span>
+                    <span className="text-black font-semibold">Analyzing...</span>
                   </>
                 ) : (
                   <>
                     <UploadIcon className="h-5 w-5 text-black" />
-                    <span className="text-black">Classify Plant</span>
+                    <span className="text-black font-semibold">Classify Plant</span>
                   </>
                 )}
               </Button>

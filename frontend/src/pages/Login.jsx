@@ -108,7 +108,7 @@ function Login({ onLogin }) {
               ) : (
                 <>
                   <LogIn className="h-5 w-5 text-black" />
-                  <span className="text-black">Sign in</span>
+                  <span className="text-black font-semibold">Sign in</span>
                 </>
               )}
             </Button>

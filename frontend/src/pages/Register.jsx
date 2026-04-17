@@ -144,7 +144,7 @@ function Register({ onRegister }) {
               ) : (
                 <>
                   <UserPlus className="h-5 w-5" />
-                  <span>Create account</span>
+                  <span className='text-black font-semibold'>Create account</span>
                 </>
               )}
             </Button>

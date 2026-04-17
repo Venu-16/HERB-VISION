@@ -98,17 +98,17 @@ function Login({ onLogin }) {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full justify-center"
+              className="w-full justify-center bg-primary text-white shadow-lg hover:bg-primary/90"
             >
               {loading ? (
                 <>
                   <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                  <span>Signing in...</span>
+                  <span className="text-black">Signing in...</span>
                 </>
               ) : (
                 <>
-                  <LogIn className="h-5 w-5" />
-                  <span>Sign in</span>
+                  <LogIn className="h-5 w-5 text-black" />
+                  <span className="text-black">Sign in</span>
                 </>
               )}
             </Button>

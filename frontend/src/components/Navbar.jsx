@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Leaf } from 'lucide-react'
+import logo from '../assets/logo.svg'
 
 export default function Navbar({ user, onLogout }) {
   const location = useLocation()
@@ -14,7 +14,7 @@ export default function Navbar({ user, onLogout }) {
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <Link to="/" className="flex items-center gap-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-primary text-white shadow-lg shadow-primary/20">
-            <Leaf className="h-6 w-6" />
+            <img src={logo} alt="HERB VISION logo" className="h-8 w-8" />
           </div>
           <div>
             <p className="text-lg font-semibold text-gray-900">HERB VISION</p>
@@ -59,7 +59,7 @@ export default function Navbar({ user, onLogout }) {
             <button
               type="button"
               onClick={onLogout}
-              className="rounded-full px-4 py-2 text-sm font-semibold bg-gradient-to-r from-primary to-secondary text-white shadow-lg hover:shadow-xl transition"
+              className="rounded-full px-4 py-2 text-sm font-bold bg-gradient-to-r from-primary to-secondary text-black shadow-lg hover:shadow-xl transition"
             >
               Logout
             </button>

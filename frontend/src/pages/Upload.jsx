@@ -112,16 +112,16 @@ function Upload({ user }) {
               <img src={preview} alt="Preview" className="max-h-72 w-auto rounded-3xl object-contain shadow-lg" />
             </div>
             <div className="mt-6 flex justify-center">
-              <Button onClick={uploadImage} disabled={loading}>
+              <Button onClick={uploadImage} disabled={loading} variant="primary" className="w-full justify-center bg-primary text-white shadow-lg hover:bg-primary/90">
                 {loading ? (
                   <>
-                    <Loader2 className="h-5 w-5 animate-spin" />
-                    Analyzing...
+                    <Loader2 className="h-5 w-5 animate-spin text-black" />
+                    <span className="text-black">Analyzing...</span>
                   </>
                 ) : (
                   <>
-                    <UploadIcon className="h-5 w-5" />
-                    Classify Plant
+                    <UploadIcon className="h-5 w-5 text-black" />
+                    <span className="text-black">Classify Plant</span>
                   </>
                 )}
               </Button>
